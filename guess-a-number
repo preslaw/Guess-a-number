@@ -1,0 +1,21 @@
+import random
+
+liczba = random.randint(1,9)
+
+licznik= 1
+
+print liczba
+
+while True:
+  guess = input('zgadnij liczbę')
+  if guess =='exit':
+    print 'wychodzisz z gry'
+    break
+  if guess == str(liczba):
+    print 'zgadłes za ', licznik, ' razem'
+    break
+  if guess < str(liczba):
+    print "zgyadywana liczba jest większa"
+  if guess > str(liczba):
+    print "zgyadywana liczba jest mniejsza"
+  licznik +=1
